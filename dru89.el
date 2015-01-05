@@ -451,8 +451,8 @@ END: The end of the region"
             (visual-line-mode t)
             (writegood-mode t)
             (flyspell-mode t)))
-(setq markdown-command "pandoc --smart -f markdown -t html")
 (setq markdown-css-path (expand-file-name "markdown.css" dru89/vendor-dir))
+(setq markdown-command (concat "pandoc --smart --toc --toc-depth=2 -f markdown -t html5 -c " markdown-css-path))
 
 ;;;;;;;;;;;;;;
 ;; DOTFILE EXTRAS
