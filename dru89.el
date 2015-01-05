@@ -189,7 +189,8 @@ If all of the packages were installed, return true."
 ;; list.
 (defvar dropbox-org-dir  (file-name-as-directory "~/Dropbox/org"))
 (global-set-key (kbd "C-c a") 'org-agenda)
-(setq org-agenda-show-log t
+(setq org-agenda-start-on-weekday 0
+      org-agenda-show-log t
       org-agenda-todo-ignore-scheduled t
       org-agenda-todo-ignore-deadlines t)
 (load-library "find-lisp")
